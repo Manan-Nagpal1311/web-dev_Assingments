@@ -1,0 +1,32 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+button{
+    margin: 30px auto;
+    padding: 16px;
+    border-radius: 20%;
+    font-size: 1.7rem;
+    border:3px solid greenyellow;
+    color:whitesmoke;
+    background-color: black;
+    transition: 0.5s;
+    transition-timing-function: linear;
+}
+
+button:hover{
+    border:3px solid palevioletred;
+    color:palevioletred;
+    box-shadow: 10px 5px 5px palevioletred;
+    cursor: pointer;
+    padding:20px;
+    font-size: 1.7rem;
+    
+}
+body
+{
+    background-color: black;
+}
