@@ -9,6 +9,7 @@ function makediv(data)
     // console.log(data.main.temp);
     const name=document.createElement('h1');
     const weather=document.createElement('h1');
+    const weather1=document.createElement('h1');
     const temp=document.createElement('h1');
     const tempminmax=document.createElement('h1');
     const day=document.createElement('h2');
@@ -32,7 +33,8 @@ function makediv(data)
             day.innerHTML+=' / ';  
         }
     }
-    weather.innerHTML=data.weather[0].main;
+    weather.innerHTML=data.weather[0].description;
+    weather1.innerHTML=data.weather[0].main;
     datadiv.append(name);
     datadiv.append(day);
     datadiv.append(temp);
@@ -40,7 +42,9 @@ function makediv(data)
     datadiv.append(weather);
     console.log(data.weather[0].icon);
     console.log(weather.innerText);
-    const imglink=`images/${weather.innerText}.jpg`;
+   
+    const imglink=`images/${weather1.innerText}.jpg`;
+    
     console.log(imglink);
     document.body.style.backgroundImage = `url(${imglink})`;
     // document.body.style.backgroundImage = `url(images/thunderstorm.jpg)`;
